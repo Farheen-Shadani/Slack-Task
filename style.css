@@ -1,0 +1,131 @@
+body {
+    margin: 0px;
+    display: flex;
+}
+
+#purple-panel {
+    background-color: #3f0e40;
+    display: flex;
+    flex-direction: column;
+    color: #a28aa1;
+    padding: 0px 10px;
+}
+
+#name {
+    display: flex;
+    justify-content: space-between;
+    color: #f6f3f6;
+    align-content: center;
+    align-items: flex-start;
+}
+
+#name>i {
+    align-self: flex-start;
+    margin-top: 25px
+}
+
+#name>i {
+    font-size: 1.5em;
+}
+
+#name p i {
+    color: #38978d;
+    margin-right: 10px;
+}
+
+#purple-panel button {
+    background-color: #260127;
+    color: #563856;
+    font-weight: bolder;
+    border: none;
+    padding: 5px 80px 5px 5px;
+}
+
+button>i {
+    margin-right: 10px;
+}
+
+h3>i {
+    margin-right: 10px;
+}
+
+#channel, #message {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+ul {
+    padding: 0px;
+}
+
+ul>li {
+    list-style: none;
+    margin: 0px;
+    padding: 0px 20px 10px;
+}
+
+#channle-list, #direct-message {
+    display: flex;
+    flex-direction: column;
+}
+
+ul i {
+    margin-right: 10px;
+}
+
+#direct-message ul i {
+    color: #2aac75;
+}
+
+#direct-message ul i:last-child {
+    color: #2aac75;
+}
+
+#white-panel {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    color: #8d8d8d;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+}
+
+#chat {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#chat h3 {
+    color: #2f2f2f;
+    font-weight: bolder;
+    margin: 0px 5px;
+    padding: 5px;
+}
+
+#chat i {
+    border-right: 1px solid;
+    margin: 0px 5px;
+    padding: 0px 5px;
+}
+
+#search>p {
+    display: inline-block;
+    font-size: 1em;
+}
+
+fieldset {
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    text-align: center;
+    color: #4b4a4b;
+    font-weight: bold;
+}
