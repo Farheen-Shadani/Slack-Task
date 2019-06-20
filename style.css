@@ -1,52 +1,84 @@
 body {
     margin: 0px;
     display: flex;
+    font-family: 'Noto Sans TC', sans-serif;
 }
+
+/* PURPLE PANEL */
 
 #purple-panel {
     background-color: #3f0e40;
     display: flex;
     flex-direction: column;
-    color: #a28aa1;
-    padding: 0px 10px;
+    color: #a891a8;
+    padding: 0px 10px 0px 15px;
 }
 
 #name {
     display: flex;
     justify-content: space-between;
-    color: #f6f3f6;
     align-content: center;
     align-items: flex-start;
 }
 
-#name>i {
-    align-self: flex-start;
-    margin-top: 25px
+#name h3 {
+    color: #f6f3f6;
+    margin-bottom: 0px;
+}
+
+#name>div>h3>i {
+    color: #a891a8;
+    padding-left: 8px;
+    font-size: 0.7em;
 }
 
 #name>i {
+    align-self: flex-start;
+    margin-top: 25px;
     font-size: 1.5em;
+}
+
+#name p {
+    margin-top: 0px;
+    font-size: 0.8em;
 }
 
 #name p i {
     color: #38978d;
-    margin-right: 10px;
+    margin-right: 5px;
+    font-size: 0.75em;
 }
 
 #purple-panel button {
     background-color: #260127;
-    color: #563856;
-    font-weight: bolder;
+    color: #ab98ac;
+    font-weight: bold;
+    font-size: 0.9em;
     border: none;
-    padding: 5px 80px 5px 5px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
 }
 
-button>i {
+#searching-btn>button>i {
+    margin-right: 12px;
+}
+
+#purple-panel h4 {
+    margin: 0px;
+}
+
+#threads {
+    margin: 25px 0px 10px;
+}
+
+h4>i {
     margin-right: 10px;
 }
 
-h3>i {
-    margin-right: 10px;
+#channel-list, #direct-message {
+    margin-top: 20px;
 }
 
 #channel, #message {
@@ -58,12 +90,16 @@ h3>i {
 
 ul {
     padding: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
 }
 
 ul>li {
     list-style: none;
-    margin: 0px;
-    padding: 0px 20px 10px;
+    margin-left: 0px;
+    padding: 5px 35px 0px 0px;
+    font-size: 0.9em;
+    width: 100%;
 }
 
 #channle-list, #direct-message {
@@ -83,6 +119,8 @@ ul i {
     color: #2aac75;
 }
 
+/* WHITE PANEL */
+
 #white-panel {
     display: flex;
     flex-direction: column;
@@ -91,41 +129,282 @@ ul i {
     color: #8d8d8d;
 }
 
+/* HEADER */
+
 header {
+    background-color: white;
     display: flex;
     justify-content: space-between;
-    align-content: flex-end;
+    align-content: center;
+    padding: 0px;
+    margin: 0px;
+    position: sticky;
+    top: 0;
 }
 
 #chat {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 0px;
+    margin: 0px 20px;
 }
 
-#chat h3 {
+#chat h2 {
     color: #2f2f2f;
     font-weight: bolder;
-    margin: 0px 5px;
+    margin: 0px;
     padding: 5px;
+    font-size: 1.2em;
 }
 
-#chat i {
-    border-right: 1px solid;
-    margin: 0px 5px;
-    padding: 0px 5px;
-}
-
-#search>p {
-    display: inline-block;
+#chat h2>i {
     font-size: 1em;
 }
 
+#chat-icons i {
+    color: #676667;
+    border-right: 1px solid;
+    margin-right: 1px;
+    padding: 0px 10px 0px 0px;
+    font-size: 0.9em;
+}
+
+#chat-icons i:last-child {
+    border: none;
+}
+
+#search {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+#search>i {
+    color: #646364;
+    margin: 10px;
+}
+
+#search>i:first-child {
+    color: #dddddd;
+}
+
+#search>button {
+    background-color: white;
+    border: 1px solid #868686;
+    border-radius: 5px;
+    color: #aeaeae;
+    padding: 10px 100px 10px 0px;
+    text-align: left;
+}
+
+#search>button>i {
+    color: #646364;
+    margin: 0px 5px;
+}
+
+/* MAIN */
+
+main a {
+    text-decoration: none;
+    color: #1667a4;
+}
+
 fieldset {
+    border-color: #e5e5e5;
     border-bottom: none;
     border-right: none;
     border-left: none;
     text-align: center;
-    color: #4b4a4b;
+    color: #3d3c3d;
     font-weight: bold;
+    font-size: 0.8em;
 }
+
+#conversation {
+    display: flex;
+    margin-left: 30px;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+#details {
+    margin-left: 10px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+#details>p {
+    font-size: 1em;
+    margin: 0px;
+    padding: 5px;
+}
+
+#info h3 {
+    font-size: 0.9em;
+    padding: 0px;
+    margin: 0px 5px;
+    color: #1d1c1d;
+}
+
+#info>p {
+    margin: 0px 5px;
+    padding: 0px;
+    color: #757475;
+    font-size: 0.6em;
+    align-self: flex-end;
+}
+
+#info>i {
+    margin: 0px 5px;
+    align-self: flex-end;
+}
+
+#info {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+#details button {
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+}
+
+#details button>i {
+    color: red;
+    margin-right: 2px;
+}
+
+#replies {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center
+}
+
+#replies>img {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+
+#replies>p {
+    font-size: 0.7em;
+    margin-left: 5px;
+}
+
+#replies a {
+    margin-right: 5px;
+}
+
+#reference {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+#reference>img {
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+}
+
+#reference>p {
+    align-self: center;
+}
+
+#reference>p>a {
+    margin: 0px;
+}
+
+h5 {
+    color: #1667a4;
+    margin: 0px;
+}
+
+/* FOOTER */
+
+footer {
+    margin: 0px;
+    position: sticky;
+    bottom: 0;
+}
+
+#footer-btn {
+    margin: 10px;
+}
+
+footer button {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    border: 2px solid #aaaaaa;
+    border-radius: 10px;
+    color: #b6b6b6;
+}
+
+footer button>i {
+    color: #868686;
+    padding: 15px;
+}
+
+footer button>i:first-child {
+    margin: 0px;
+    border-right: 2px solid #aaaaaa;
+}
+
+footer button>i:nth-child(2) {
+    margin-left: auto;
+    padding: 15px 10px;
+}
+
+@media (max-width: 600px) {
+    #purple-panel {
+        display: none;
+    }
+    header {
+        flex-direction: column;
+    }
+    #search {
+        display: none;
+    }
+}
+    @media (min-width: 600px) and (max-width: 992px) {
+        body {
+            flex-direction: column;
+        }
+        #purple-panel {
+            flex-direction: row;
+            justify-content: space-evenly;
+            position: sticky;
+            top: 0;
+        }
+        ul, li {
+            display: none;
+        }
+        #searching-btn {
+            margin-top: 25px;
+        }
+        #channel, #message {
+            margin-top: 5px;
+        }
+        
+        header{
+            position: unset;
+        }
+    }
